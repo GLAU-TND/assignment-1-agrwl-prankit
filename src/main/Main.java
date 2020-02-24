@@ -5,15 +5,18 @@ import definition.Person;
 
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         ContactList contactList = new ContactList();
         String firstName;
         String lastName;
         String email;
         boolean flag = true;
-        while (flag == true) {
+        while (flag == true)
+        {
             System.out.println();
             System.out.println("welcome to Prankit's contact list");
             System.out.println("Press 1 to add a new contact\n" +
@@ -23,7 +26,8 @@ public class Main {
                     "Press 5 to exit program ");
             int number = sc.nextInt();
             sc.nextLine();
-            switch (number) {
+            switch (number)
+            {
                 case 1:
                     String[] contactNumber = new String[3];
                     System.out.println("You have chosen to add a new contact: \n" +
